@@ -1,0 +1,17 @@
+com\IKBSU\Repositories\AttendanceTypeRepository.class
+com\IKBSU\Repositories\ScoutRepository.class
+com\IKBSU\Models\PatrolModel.class
+com\IKBSU\Models\PatrolDetailModel.class
+com\IKBSU\ApplicationStartup.class
+com\IKBSU\Models\AttendanceModel.class
+com\IKBSU\Models\AttendanceDetailModel.class
+com\IKBSU\Models\ScoutModel.class
+com\IKBSU\Controllers\AttendanceController.class
+com\IKBSU\Models\AttendanceTypeModel.class
+com\IKBSU\Repositories\PatrolRepository.class
+com\IKBSU\Repositories\AttendanceRepository.class
+com\IKBSU\Repositories\PatrolDetailRepository.class
+com\IKBSU\Controllers\PatrolController.class
+com\IKBSU\Repositories\AttendanceDetailRepository.class
+com\IKBSU\Repositories\LastClosedRepository.class
+com\IKBSU\Models\LastClosedModel.class
