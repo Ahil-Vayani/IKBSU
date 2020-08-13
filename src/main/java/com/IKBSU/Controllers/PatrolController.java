@@ -25,7 +25,13 @@ public class PatrolController {
 	}
 	
 	@GetMapping("/{id}")
-	private Optional<PatrolModel> getPatrolByName(@PathVariable Integer id) {
+	public Optional<PatrolModel> getPatrolByName(@PathVariable Integer id) {
 		return patrolRepo.findById(id);
+	}
+	
+	@GetMapping("/lastClosed/{id}")
+	public List<PatrolModel> getPatrolsByLastClosedId(@PathVariable Integer id){
+		List<PatrolModel> patrols = patrolRepo.findByLastClosed_lastClosedId(id);
+		return patrols;
 	}
 }
