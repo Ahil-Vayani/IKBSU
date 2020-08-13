@@ -34,4 +34,14 @@ public class PatrolModel {
 	@ManyToOne
 	@JoinColumn(name = "last_closed_id") 
 	private LastClosedModel lastClosed;
+
+	public List<PatrolDetailModel> getPatrolDetails() {
+		return patrolDetails;
+	}
+
+	public void setPatrolDetails(List<PatrolDetailModel> patrolDetails) {
+		this.patrolDetails = patrolDetails;
+	}
+	
+	
 }
