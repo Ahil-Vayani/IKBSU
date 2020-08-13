@@ -11,4 +11,5 @@ import com.IKBSU.Models.PatrolModel;
 public interface PatrolRepository extends JpaRepository<PatrolModel, Integer>{
 
 	List<PatrolModel> findByPatrolName(String name);
+	List<PatrolModel> findByLastClosed_lastClosedId(Integer lastClosedId);
 }
