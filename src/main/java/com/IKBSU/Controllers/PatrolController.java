@@ -24,14 +24,15 @@ public class PatrolController {
 		return patrolRepo.findAll();
 	}
 	
-	@GetMapping("/{id}")
-	public Optional<PatrolModel> getPatrolByName(@PathVariable Integer id) {
-		return patrolRepo.findById(id);
+	@GetMapping("/{patrolId}")
+	public Optional<PatrolModel> getPatrolByName(@PathVariable Integer patrolId) {
+		return patrolRepo.findById(patrolId);
 	}
 	
-	@GetMapping("/lastClosed/{id}")
-	public List<PatrolModel> getPatrolsByLastClosedId(@PathVariable Integer id){
-		List<PatrolModel> patrols = patrolRepo.findByLastClosed_lastClosedId(id);
+	@GetMapping("/lastClosed/{lastClosedId}")
+	public List<PatrolModel> getPatrolsByLastClosedId(@PathVariable Integer lastClosedId){
+		List<PatrolModel> patrols = patrolRepo.findByLastClosed_lastClosedId(lastClosedId);
 		return patrols;
 	}
+	
 }
